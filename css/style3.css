@@ -78,26 +78,26 @@ Main Components
 }
 .projects-container .cd-single-project::before {
   /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/img-1-small.jpg';
+  content: 'img/conf2.jpg';
   display: none;
 }
 .projects-container .cd-single-project:nth-of-type(2) {
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/conf3.png");
+  background-image: url("../img/conf3.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
-  content: 'img/conf3.jpg';
+  content: '../img/conf3.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(3) {
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/chess3.jpg");
+  background-image: url("../img/conf3.png");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
-  content: 'img/chess3.jpg';
+  content: 'img/conf3.jpg';
 }
 .projects-container .cd-single-project:nth-of-type(4) {
   top: 75vh;
@@ -148,30 +148,36 @@ Main Components
     transition: width 0s;
   }
   .projects-container .cd-single-project:first-of-type::before {
-    content: 'img/img-1-large.jpg';
+    content: 'img/chess3.jpg';
+    /*content: 'img/img-1-large.jpg';*/
   }
   .projects-container .cd-single-project:first-of-type::after {
-    background-image: url("../img/conf2.jpg");
+    background-image: url("../img/chess3.jpg");
+    /*background-image: url("../img/conf2.jpg");*/
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
     left: 25vw;
   }
   .projects-container .cd-single-project:nth-of-type(2)::before {
-    content: 'img/conf3.jpg';
+    content: 'img/img-1-large.jpg';
+    /*content: 'img/conf3.jpg';*/
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("../img/conf3.png");
+    background-image: url("../img/conf2.jpg");
+    /*background-image: url("../img/conf3.png");*/
   }
   .projects-container .cd-single-project:nth-of-type(3) {
     top: 0;
     left: 50vw;
   }
   .projects-container .cd-single-project:nth-of-type(3)::before {
-    content: 'img/chess3.jpg';
+    content: 'img/conf3.jpg';
+    /*content: 'img/chess3.jpg';*/
   }
   .projects-container .cd-single-project:nth-of-type(3)::after {
-    background-image: url("../img/chess3.jpg");
+    background-image: url("../img/conf3.png");
+    /*background-image: url("../img/chess3.jpg");*/
   }
   .projects-container .cd-single-project:nth-of-type(4) {
     top: 0;
@@ -179,9 +185,11 @@ Main Components
   }
   .projects-container .cd-single-project:nth-of-type(4)::before {
     content: 'img/chess3.jpg';
+    /*content: 'img/chess3.jpg';*/
   }
   .projects-container .cd-single-project:nth-of-type(4)::after {
     background-image: url("../img/chess3.jpg");
+    /*background-image: url("../img/chess3.jpg");*/
   }
   .projects-container .cd-single-project::after {
     height: 100vh;
@@ -217,7 +225,7 @@ Main Components
     transition: transform 0.8s, opacity 0.5s;
   }
   .projects-container .cd-single-project.is-loaded::after {
-    opacity: 0;
+    opacity: 0.3;
   }
   .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
     opacity: 1;
