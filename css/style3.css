@@ -85,7 +85,7 @@ Main Components
   top: 25vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/conf3.jpg");
+  background: url("../img/conf3.jpg") ;
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
   content: '../img/conf3.jpg';
@@ -94,7 +94,7 @@ Main Components
   top: 50vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/conf3.png");
+  background: url("../img/conf3.png") 50% 100% no-repeat;
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
   content: 'img/conf3.jpg';
@@ -164,7 +164,7 @@ Main Components
     /*content: 'img/conf3.jpg';*/
   }
   .projects-container .cd-single-project:nth-of-type(2)::after {
-    background-image: url("../img/conf2.jpg");
+    background: url("../img/conf2.jpg") 50% no-repeat;
     /*background-image: url("../img/conf3.png");*/
   }
   .projects-container .cd-single-project:nth-of-type(3) {
